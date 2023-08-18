@@ -7,27 +7,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900 vsc-initialized">
-<div class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">  
-    <header>
-        <div class="lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+    <!-- main container -->
+    <div class="mx-auto h-980 max-w-screen-xl px-6 py-12 font-sans flex">  
+        <!-- left part of the main screen -->
+        <div class="w-1/2 inline-block">
+            <!-- greeting -->
             <p class="text-teal-300">Hi there,</p>
-            <h1 class="text-5xl font-semibold my-"><a href="/">I'm Egor Skalozub.</a></h1>
+            <!-- name and title -->
+            <h1 class="text-5xl font-semibold mt-2"><a href="/">I'm Egor Skalozub.</a></h1>
             <h2 class="text-2xl font-light mt-3">Junior Software engineer</h2>
-            <p class="mt-4 max-w-xs leading-normal">based in Finland, specialising in ML and Artificial Intelligence products</p>
+            <!-- description -->
+            <p class="mt-4 leading-normal">based in Finland, specialising in ML and Artificial Intelligence products</p>
+            <!-- navigation menu -->
+            <nav>
+                <ul class="font-light flex flex-col">
+                    <li><a class="" href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SKILLS</a></li>
+                    <li><a href="#">EXPERIENCE</a></li>
+                </ul>
+            </nav>
         </div>
-    </header>
-        <nav>
-            <ul class="font-light">
-                <li><a class=""" href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SKILLS</a></li>
-                <li><a href="#">EXPERIENCE</a></li>
-            </ul>
-        </nav>
+        
+        <!-- right part of the main screen -->
+        <div class="w-1/2 inline-block relative">
+                <!-- contact button -->
+                <button class="border-2 border-teal-300 hover:bg-teal-300 text-teal-300 hover:text-white font-normal py-2 px-4 rounded absolute bottom-0 right-0 mb-4 mr-4">
+                    GET IN TOUCH
+                </button>
+        </div>
     
-        <button class="border-2 border-teal-300 hover:bg-teal-300 text-teal-300 hover:text-white font-normal py-2 px-4 rounded float-left">
-            GET IN TOUCH
-        </button>
-    </div> 
+    </div>
 </body>
 </html>
