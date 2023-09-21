@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Egor Skalozub</title>
+    <!-- If you've bundled tailwind into style.css, this is fine. Otherwise, link to TailwindCSS directly. -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900 vsc-initialized">
-    <!-- main container -->
-    <div class="mx-auto max-w-screen-lg px-6 h-980 py-12 font-sans flex mt-6">  
+<body class="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900">
+
+    <header class="mx-auto max-w-screen-lg px-6 h-980 py-12 font-sans flex mt-6">  
         <!-- left part of the main screen -->
-        <div class="w-1/2 inline-block h-980">
+        <div class="w-1/2">
             <!-- greeting -->
             <p class="text-teal-300">Hi there,</p>
             <!-- name and title -->
@@ -20,7 +21,7 @@
             <p class="mt-4 leading-normal">based in Finland, specialising in ML and Artificial Intelligence products</p>
             <!-- navigation menu -->
             <nav>
-                <ul class="font-light flex flex-col mt-5 ">
+                <ul class="font-light flex flex-col mt-5">
                     <li class="mb-3 text-xl"><a href="#">HOME</a></li>
                     <li class="mb-3 text-xl"><a href="#">ABOUT</a></li>
                     <li class="mb-3 text-xl"><a href="#">SKILLS</a></li>
@@ -30,15 +31,20 @@
         </div>
         
         <!-- right part of the main screen -->
-        <div class="w-1/2 inline-block relative">
-                <!-- contact button -->
-                <button class="border-2 border-teal-300 hover:bg-teal-300 text-teal-300 hover:text-white font-normal py-2 px-4 rounded absolute bottom-0 right-0 mb-4 mr-4">
-                    GET IN TOUCH
-                </button>
+        <div class="w-1/2 flex items-end justify-end">
+            <!-- contact button -->
+            <button class="border-2 border-teal-300 hover:bg-teal-300 text-teal-300 font-normal py-2 px-4 rounded mb-4 mr-4">
+                GET IN TOUCH
+            </button>
         </div>
-    <!-- ABOUT ME -->
-    <div>
-    </div>
-    </div>
+    </header>
+
+    <section class="mx-auto max-w-screen-lg px-6 h-980 py-12 font-sans">
+        <h2 class="font-bold"><span class="text-teal-300 mb-4 text-xl">01. </span><span class="text-2xl">About Me</span></h2>
+        <div class="w-2/5">
+            I'm Egor, a passionate software developer and AI enthusiast. From an early age, I dived into creating Minecraft servers and programming robots. Now, I'm studying Artificial Intelligence at Satakunta University. In my free time, I enjoy soccer and gym workouts. Excited to contribute to the ever-evolving tech world with my skills and creativity!
+        </div>
+    </section>
+
 </body>
 </html>
