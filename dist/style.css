@@ -629,6 +629,14 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.mt-40 {
+  margin-top: 10rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -658,12 +666,20 @@ video {
   width: 40%;
 }
 
+.w-3\/5 {
+  width: 60%;
+}
+
 .max-w-screen-lg {
   max-width: 1024px;
 }
 
 .max-w-4xl {
   max-width: 56rem;
+}
+
+.flex-shrink {
+  flex-shrink: 1;
 }
 
 .flex-col {
@@ -716,6 +732,10 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .font-sans {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -756,6 +776,10 @@ video {
   font-weight: 700;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .leading-normal {
   line-height: 1.5;
 }
@@ -782,6 +806,10 @@ video {
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .selection\:bg-teal-300 *::-moz-selection {
