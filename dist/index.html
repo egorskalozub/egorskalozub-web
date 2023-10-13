@@ -2,43 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logo_framed.png" />   
+    <meta name="description" content="I am a software developer.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>Egor Skalozub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900 vsc-initialized">
-    <!-- main container -->
-    <div class="mx-auto max-w-screen-lg px-6 h-980 py-12 font-sans flex mt-6">  
+    <!-- main section -->
+    <section class="mx-auto max-w-screen-lg px-6 py-12 font-sans flex flex-col md:flex-row mt-6">
         <!-- left part of the main screen -->
-        <div class="w-1/2 inline-block h-980">
+        <div class="w-full md:w-1/2 h-980 md:inline-block">
+            <!--Language switcher  -->
+            <div class="mb-4">
+                <label for="language-switcher" class="text-teal-300">Select language:</label>
+                <select id="language-switcher" class="language-switcher ml-2 p-2 border rounded" onchange="switchLanguage()">
+                    <option value="en">English</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </div>
             <!-- greeting -->
             <p class="text-teal-300">Hi there,</p>
             <!-- name and title -->
-            <h1 class="text-5xl font-semibold mt-2"><a href="/">I'm Egor Skalozub.</a></h1>
-            <h2 class="text-2xl font-light mt-3">Software Engineer</h2>
+            <h1 class="text-5xl font-semibold mt-2"><a href="/" class="hover:text-teal-300">I'm Egor Skalozub.</a></h1>
+            <h2 class="text-2xl font-light mt-3">Software / ML Engineer</h2>
             <!-- description -->
-            <p class="mt-4 leading-normal">based in Finland, specialising in ML and Artificial Intelligence products</p>
+            <p class="mt-1 leading-normal">Based in Finland, specializing in ML and Artificial Intelligence products. I create, code, and test. Goal-Oriented and ambitious</p>
             <!-- navigation menu -->
             <nav>
-                <ul class="font-light flex flex-col mt-5 ">
-                    <li class="mb-3 text-xl"><a href="#">HOME</a></li>
-                    <li class="mb-3 text-xl"><a href="#">ABOUT</a></li>
-                    <li class="mb-3 text-xl"><a href="#">SKILLS</a></li>
-                    <li class="mb-3 text-xl"><a href="#">EXPERIENCE</a></li>
+                <ul class="font-light flex flex-col mt-44">
+                    <li class="mb-3 text-xl"><a href="#" class="hover:text-teal-300">HOME</a></li>
+                    <li class="mb-3 text-xl"><a href="#" class="hover:text-teal-300">ABOUT</a></li>
+                    <li class="mb-3 text-xl"><a href="#" class="hover:text-teal-300">SKILLS</a></li>
+                    <li class="mb-3 text-xl"><a href="#" class="hover:text-teal-300">EXPERIENCE</a></li>
                 </ul>
             </nav>
         </div>
         
         <!-- right part of the main screen -->
-        <div class="w-1/2 inline-block relative">
-                <!-- contact button -->
-                <button class="border-2 border-teal-300 hover:bg-teal-300 text-teal-300 hover:text-white font-normal py-2 px-4 rounded absolute bottom-0 right-0 mb-4 mr-4">
-                    GET IN TOUCH
-                </button>
+        <div class="w-full md:w-1/2 h-980 md:inline-block relative">
+            <!-- contact button -->
+            <button class="border-2 border-teal-300 hover:bg-teal-300 text-teal-300 hover:text-white font-normal py-2 px-4 rounded absolute bottom-0 right-0 mb-4 mr-4">
+                GET IN TOUCH
+            </button>
         </div>
-    <!-- ABOUT ME -->
-    <div>
-    </div>
-    </div>
+    </section>
+    <section class="mx-auto max-w-screen-lg px-6 py-12 font-sans flex flex-col md:flex-row mt-6">
+        <span class=" font-bold text-white text-2xl">About me</span>
+    </section>
+    <!-- Script tags here if needed -->
 </body>
 </html>
